@@ -1,9 +1,9 @@
-const Tabs = ({children, buttons}) => {
-    return <>
-    <menu>
-        {buttons}
-    </menu>
-    {children}
+const Tabs = ({ children, buttons, ButtonContainer }) => {
+  return (
+    <>
+      <ButtonContainer>{buttons}</ButtonContainer>
+      {children}
     </>
-}
+  );
+};
 export default Tabs;
